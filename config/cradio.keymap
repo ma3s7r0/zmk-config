@@ -37,7 +37,7 @@
             bindings = <&mo>, <&to>;
         };
         // tap and 
-        hm: homerow_mods {
+        as: autoshift {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
@@ -71,7 +71,7 @@
                 
        		default_layer {
 		bindings = <
-            &kp P &kp U &kp ESC &kp COMMA &kp Q &kp G &kp C  &kp L    &kp M   &kp F 
+            &as LS(P) P &kp U &kp ESC &kp COMMA &kp Q &kp G &kp C  &kp L    &kp M   &kp F 
             &kp H &kp I &kp E &kp A &kp O 			  &kp D &kp T &kp R &kp N &kp S
             &kp K &kp Y &kp DOT &kp MINUS &kp X		  &kp J &kp V  &kp W &kp B &kp Z
                             &kp LSHIFT  &to 1    &kp SPC &kp BSPC
