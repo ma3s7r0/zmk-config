@@ -10,8 +10,8 @@
 
 
 &mt {
-    // flavor = "tap-preferred";
-    // tapping_term_ms = <200>;
+    flavor = "tap-preferred";
+    tapping_term_ms = <200>;
 };
 
 / { 
@@ -71,10 +71,10 @@
                 
        		default_layer {
 		bindings = <
-            &kp LS(P) p &kp U &kp ESC &kp COMMA &kp Q &kp G &kp C  &kp L    &kp M   &kp F 
+            &kp P &kp U &kp ESC &kp COMMA &kp Q &kp G &kp C  &kp L    &kp M   &kp F 
             &kp H &kp I &kp E &kp A &kp O 			  &kp D &kp T &kp R &kp N &kp S
             &kp K &kp Y &kp DOT &kp MINUS &kp X		  &kp J &kp V  &kp W &kp B &kp Z
-                            &bt BT_CLR  &bt BT_NXT    &kp SPC &mo 2
+                            &kp LSHIFT  &to 1    &kp SPC &kp BSPC
             >; 
 		};
 
@@ -83,7 +83,7 @@
             &kp GRAVE &kp LBKT  &kp UP   &kp RBKT     &kp NON_US_BACKSLASH        &kp N7    &kp N8 &kp N9 &kp N0    &kp NON_US_HASH
             &kp TAB   &kp LEFT  &kp DOWN &kp RIGHT    &kp SEMI                    &kp N4    &kp N5 &kp N6 &kp MINUS &kp BACKSPACE 
             &kp LALT  &kp COMMA &kp APOS &kp PERIOD   &kp FSLH                    &kp N1    &kp N2 &kp N3 &kp EQUAL  &kp ENTER 
-                                         &mtt LCTRL 0 &kp LSHFT                   &kp SPACE &mtt LC(LS(LALT)) 2 
+                &mtt LCTRL 0 &kp trans                   &to 0 &to 2
             >;
 		};	
 		
@@ -92,7 +92,7 @@
             &kp ESC     &kp HOME      &kp F22       &kp INS       &kp C_VOL_UP        &kp PRINTSCREEN &kp F1 &kp F2  &kp F3  &kp F4
             &kp F23     &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_VOL_DN        &kp K_CALC      &kp F5 &kp F6  &kp F7  &kp F8 
             &bt BT_CLR  &bt BT_SEL(0) &bt BT_SEL(1) &bt BT_SEL(2) &kp C_MUTE          &kp CAPS        &kp F9 &kp F10 &kp F11 &kp F12   
-                                                    &mtt LCTRL 0  &kp LSHFT  		  &kp SPACE       &kp LC(LS(LALT))
+                &mtt LCTRL 0  &trans  		  &to 0       &kp LC(LS(LALT))
             >;
 		};	
         
